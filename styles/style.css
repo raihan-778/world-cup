@@ -65,9 +65,17 @@ common style for banner section
 .match-details {
   margin-top: 60px;
 }
+.all-match-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 .match-info {
   display: flex;
   flex-direction: column;
+}
+.match-info img {
+  width: 312px;
+  height: 362px;
 }
 .match-info button {
   width: 100px;
