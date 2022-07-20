@@ -16,7 +16,7 @@ h3 {
   font-weight: 600;
 }
 /*=============================> 
-common style for banner section 
+style for banner section 
 =======================>*/
 .banner {
   display: flex;
@@ -38,7 +38,6 @@ common style for banner section
 .banner .banner-content button {
   background: #dd0000;
   border-radius: 5px;
-  padding: 16px 25px;
   height: 56px;
   width: 187px;
   font-size: 20px;
@@ -57,11 +56,9 @@ common style for banner section
 }
 
 /*=============================> 
-common style for banner section 
+style for match info
 =======================>*/
-.all-match {
-  display: flex;
-}
+
 .match-details {
   margin-top: 60px;
 }
@@ -73,6 +70,7 @@ common style for banner section
   display: flex;
   flex-direction: column;
 }
+
 .match-info img {
   width: 312px;
   height: 362px;
@@ -98,6 +96,7 @@ common style for banner section
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 20px;
   margin: 0 15px;
 }
 .link-buttons .btn {
@@ -106,9 +105,12 @@ common style for banner section
   background: #ffffff;
   border-radius: 10px;
   margin: 5px 0;
+  font-size: 20px;
+  font-weight: 600;
 }
 .btn.activ {
   background: #dd0000;
+  color: #fff;
 }
 span {
   margin: 0 10px;
@@ -116,3 +118,114 @@ span {
 span i {
   margin: 0 5px;
 }
+/*=============================> 
+ style for footer section
+=======================>*/
+footer {
+  background-color: #161616;
+  color: #fff;
+}
+footer hr {
+  width: 80%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+footer h2 {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.footer-description ul,
+.social-media-links ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-description ul li,
+.social-media-links ul li {
+  margin-left: 25px;
+}
+.fa-brands {
+  width: 55px;
+  height: 40px;
+  font-size: 24px;
+}
+.social-media-links a {
+  color: #fff;
+}
+.social-media-links a:hover {
+  color: #dd0000;
+}
+/************************* 
+Css for match file 
+*******************/
+/* Css for match banner */
+.match-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #161616;
+  width: 80vw;
+  margin-bottom: 60px;
+}
+
+.match-banner-content {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 30px 70px;
+  width: 40vw;
+}
+.match-banner .match-banner-content button {
+  background: #dd0000;
+  border-radius: 5px;
+  height: 56px;
+  width: 187px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  border: none;
+  margin-top: 50px;
+}
+.match-banner-img {
+  width: 60vw;
+  margin-left: 40px;
+}
+
+.match-banner-img img {
+  width: 100%;
+}
+
+/* css for match schedule */
+.match-section {
+  width: 100vw;
+}
+.all-match-container {
+  display: flex;
+  justify-content: center;
+}
+.all-match-schedule {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+}
+.match-schedule {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.team-images {
+  display: flex;
+  justify-content: center;
+}
+.team-images img {
+  width: 93.04px;
+  height: 56.18px;
+}
+/*=============================> 
+media css for all
+=======================>*/
