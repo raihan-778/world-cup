@@ -68,7 +68,7 @@ Css for match file
   align-items: center;
   justify-content: center;
   padding: 20px;
-  margin: 0 15px;
+  margin: 0 20px;
 }
 .link-buttons .btn {
   width: 252px;
@@ -86,21 +86,26 @@ Css for match file
 /* css for match schedule */
 
 .match-section {
-  width: 100vw;
+  width: 100%;
 }
 .all-match-container {
   display: flex;
   justify-content: center;
+  margin: 0;
+  padding: 20px;
 }
 .all-match-schedule {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 30px;
+  grid-row-gap: 30px;
 }
 .match-schedule {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .team-images {
@@ -108,7 +113,7 @@ Css for match file
   justify-content: center;
 }
 .team-images img {
-  width: 93.04px;
+  width: 120px;
   height: 56.18px;
 }
 /*=============================> 
@@ -150,4 +155,138 @@ footer h2 {
 }
 .social-media-links a:hover {
   color: #dd0000;
+}
+/*=============================> 
+ media css for all
+=======================>*/
+@media screen and (max-width: 667px) {
+  h1 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  /* media css for banner */
+  .match-banner {
+    width: 85vw;
+    margin: 30px auto;
+    border-radius: 10px;
+    padding: 15px;
+  }
+  .match-banner-content {
+    padding: 20px 25px;
+    width: 40vw;
+  }
+  /* media css for match details section */
+  .link-buttons {
+    flex-direction: column;
+    background: transparent;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    width: 90%;
+  }
+  .link-buttons .btn {
+    width: 252px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 15px 0;
+  }
+
+  .all-match-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+  }
+  .all-match-schedule {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    justify-content: center;
+  }
+  .match-schedule {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  .team-images img {
+    width: 45%;
+    height: 160px;
+  }
+  /* media css for footer */
+  .footer-description {
+    margin: o auto;
+  }
+  .footer-description ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  .footer-description ul li {
+    margin: 0;
+  }
+
+  footer h2 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  .footer-description {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 1079px) and (min-width: 668px) {
+  /* media for banner section */
+  h1 {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  /* media css for match details section */
+  .all-match-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .all-match-schedule {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    margin: 0;
+  }
+  .link-buttons {
+    flex-direction: row;
+    width: 90vw;
+    height: 0;
+    background: transparent;
+    align-items: center;
+    margin: 20px 15px;
+  }
+  .link-buttons .btn {
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 5px 15px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .team-images img {
+    width: 100%;
+  }
+  /* media css for footer section */
+  .footer-description ul {
+    flex-flow: wrap;
+  }
 }
