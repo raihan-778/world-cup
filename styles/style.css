@@ -174,11 +174,12 @@ footer h2 {
 /*=============================> 
 media css for all
 =======================>*/
-@media screen and (max-width: 668px) {
+@media screen and (max-width: 667px) {
   h1 {
     font-size: 24px;
     font-weight: 500;
   }
+  /* media css for banner */
   .banner {
     width: 85vw;
     margin: 30px auto;
@@ -189,23 +190,26 @@ media css for all
     padding: 20px 25px;
     width: 40vw;
   }
+  /* media css for match details section */
   .link-buttons {
-    flex-direction: row;
-    width: 90vw;
-    height: 0;
-    justify-content: space-between;
+    flex-direction: column;
     background: transparent;
     align-items: center;
-    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    width: 90%;
   }
   .link-buttons .btn {
     width: 252px;
     height: 50px;
     border-radius: 10px;
-    margin: 5px 15px;
     font-size: 16px;
     font-weight: 500;
+    margin: 15px 0;
   }
+
   .all-match {
     display: flex;
     flex-direction: column;
@@ -219,8 +223,6 @@ media css for all
   .match-info {
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
     width: 90vw;
   }
   .match-info img {
@@ -252,5 +254,45 @@ media css for all
   .footer-description {
     margin: 0;
     padding: 0;
+  }
+}
+
+@media only screen and (max-width: 1079px) and (min-width: 668px) {
+  /* media for banner section */
+  h1 {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  /* media css for match details section */
+  .all-match {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .all-match-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    margin: 0;
+  }
+  .link-buttons {
+    flex-direction: row;
+    width: 90vw;
+    height: 0;
+    background: transparent;
+    align-items: center;
+    margin: 20px 15px;
+  }
+  .link-buttons .btn {
+    width: 252px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 5px 15px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .match-info img {
+    width: 100%;
   }
 }
