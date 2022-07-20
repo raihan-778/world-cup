@@ -23,8 +23,10 @@ style for banner section
   justify-content: space-between;
   align-items: center;
   background-color: #161616;
-  width: 100vw;
-  margin-bottom: 60px;
+  width: 90vw;
+  margin: 60px auto;
+  border-radius: 10px;
+  padding: 15px;
 }
 
 .banner-content {
@@ -60,31 +62,15 @@ style for match info
 =======================>*/
 
 .match-details {
-  margin-top: 60px;
+  width: 90vw;
+  margin: 60px auto;
 }
-.all-match-info {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-.match-info {
+.all-match {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
 }
-
-.match-info img {
-  width: 312px;
-  height: 362px;
-}
-.match-info button {
-  width: 100px;
-  height: 32px;
-  color: #000;
-  border: 1px solid #161616;
-  border-radius: 5px;
-  background-color: #fff;
-  font-size: 16px;
-  font-weight: 500;
-  margin-top: 20px;
+.match-details {
+  margin-top: 60px;
 }
 
 .link-buttons {
@@ -112,6 +98,32 @@ style for match info
   background: #dd0000;
   color: #fff;
 }
+.all-match-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+.match-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.match-info img {
+  width: 312px;
+  height: 175px;
+}
+.match-info button {
+  width: 100px;
+  height: 32px;
+  color: #000;
+  border: 1px solid #161616;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
 span {
   margin: 0 10px;
 }
@@ -158,74 +170,87 @@ footer h2 {
 .social-media-links a:hover {
   color: #dd0000;
 }
-/************************* 
-Css for match file 
-*******************/
-/* Css for match banner */
-.match-banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #161616;
-  width: 80vw;
-  margin-bottom: 60px;
-}
 
-.match-banner-content {
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  padding: 30px 70px;
-  width: 40vw;
-}
-.match-banner .match-banner-content button {
-  background: #dd0000;
-  border-radius: 5px;
-  height: 56px;
-  width: 187px;
-  font-size: 20px;
-  font-weight: 400;
-  color: #fff;
-  border: none;
-  margin-top: 50px;
-}
-.match-banner-img {
-  width: 60vw;
-  margin-left: 40px;
-}
-
-.match-banner-img img {
-  width: 100%;
-}
-
-/* css for match schedule */
-.match-section {
-  width: 100vw;
-}
-.all-match-container {
-  display: flex;
-  justify-content: center;
-}
-.all-match-schedule {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 30px;
-}
-.match-schedule {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.team-images {
-  display: flex;
-  justify-content: center;
-}
-.team-images img {
-  width: 93.04px;
-  height: 56.18px;
-}
 /*=============================> 
 media css for all
 =======================>*/
+@media screen and (max-width: 668px) {
+  h1 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .banner {
+    width: 85vw;
+    margin: 30px auto;
+    border-radius: 10px;
+    padding: 15px;
+  }
+  .banner-content {
+    padding: 20px 25px;
+    width: 40vw;
+  }
+  .link-buttons {
+    flex-direction: row;
+    width: 90vw;
+    height: 0;
+    justify-content: space-between;
+    background: transparent;
+    align-items: center;
+    margin: 20px auto;
+  }
+  .link-buttons .btn {
+    width: 252px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 5px 15px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .all-match {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .all-match-info {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 15px;
+  }
+  .match-info {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    width: 90vw;
+  }
+  .match-info img {
+    width: 100%;
+    height: 320px;
+  }
+  /* media css for footer */
+  .footer-description {
+    margin: o auto;
+  }
+  .footer-description ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  .footer-description ul li {
+    margin: 0;
+  }
+
+  footer h2 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  .footer-description {
+    margin: 0;
+    padding: 0;
+  }
+}

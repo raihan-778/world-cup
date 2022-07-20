@@ -1,0 +1,151 @@
+/*=============================> 
+common style for all 
+=======================>*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-size: 70px;
+  font-weight: 700;
+}
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+/************************* 
+Css for match file 
+*******************/
+/* Css for match banner */
+.match-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #161616;
+  width: 80vw;
+  margin-bottom: 60px;
+}
+
+.match-banner-content {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 30px 70px;
+  width: 40vw;
+}
+.match-banner .match-banner-content button {
+  background: #dd0000;
+  border-radius: 5px;
+  height: 56px;
+  width: 187px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  border: none;
+  margin-top: 50px;
+}
+.match-banner-img {
+  width: 60vw;
+  margin-left: 40px;
+}
+
+.match-banner-img img {
+  width: 90%;
+}
+/* css for link buttons */
+.link-buttons {
+  width: 312px;
+  height: 312px;
+  background: #161616;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 0 15px;
+}
+.link-buttons .btn {
+  width: 252px;
+  height: 64px;
+  background: #ffffff;
+  border-radius: 10px;
+  margin: 5px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+.btn.activ {
+  background: #dd0000;
+  color: #fff;
+}
+/* css for match schedule */
+
+.match-section {
+  width: 100vw;
+}
+.all-match-container {
+  display: flex;
+  justify-content: center;
+}
+.all-match-schedule {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+}
+.match-schedule {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.team-images {
+  display: flex;
+  justify-content: center;
+}
+.team-images img {
+  width: 93.04px;
+  height: 56.18px;
+}
+/*=============================> 
+ style for footer section
+=======================>*/
+footer {
+  background-color: #161616;
+  color: #fff;
+}
+footer hr {
+  width: 80%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+footer h2 {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.footer-description ul,
+.social-media-links ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-description ul li,
+.social-media-links ul li {
+  margin-left: 25px;
+}
+.fa-brands {
+  width: 55px;
+  height: 40px;
+  font-size: 24px;
+}
+.social-media-links a {
+  color: #fff;
+}
+.social-media-links a:hover {
+  color: #dd0000;
+}
