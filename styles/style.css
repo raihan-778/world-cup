@@ -56,6 +56,23 @@ style for banner section
 .banner-img img {
   width: 100%;
 }
+/* css for animation */
+.banner-content button {
+  position: relative;
+}
+.banner-content button span {
+  position: absolute;
+  left: 60%;
+  animation: slid 1s ease-in-out 0.2s infinite alternate;
+}
+@keyframes slid {
+  from {
+    left: 70%;
+  }
+  to {
+    left: 80%;
+  }
+}
 
 /*=============================> 
 style for match info
@@ -129,6 +146,23 @@ span {
 }
 span i {
   margin: 0 5px;
+}
+.view-all-btn {
+  background-color: #2412c9;
+  width: 252px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  margin: 15px 0;
+  border: none;
+  color: #fff;
+  transition: 0.2s all ease-in-out;
+  display: none;
+}
+.view-all-btn:hover {
+  background-color: #dd0000;
 }
 /*=============================> 
  style for footer section
@@ -229,6 +263,7 @@ media css for all
     width: 100%;
     height: 320px;
   }
+
   /* media css for footer */
   .footer-description {
     margin: o auto;
@@ -294,5 +329,8 @@ media css for all
   }
   .match-info img {
     width: 100%;
+  }
+  .view-all-btn {
+    display: block;
   }
 }

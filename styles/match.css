@@ -57,6 +57,23 @@ Css for match file
 .match-banner-img img {
   width: 90%;
 }
+/* css for animation */
+.match-banner-content button {
+  position: relative;
+}
+.match-banner-content button span {
+  position: absolute;
+  left: 60%;
+  animation: slid 1s ease-in-out 0.2s infinite alternate;
+}
+@keyframes slid {
+  from {
+    left: 80%;
+  }
+  to {
+    left: 90%;
+  }
+}
 /* css for link buttons */
 .link-buttons {
   width: 312px;
@@ -115,6 +132,22 @@ Css for match file
 .team-images img {
   width: 120px;
   height: 56.18px;
+}
+.view-all-btn {
+  background-color: #2412c9;
+  width: 252px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 15px 0;
+  border: none;
+  color: #fff;
+  transition: 0.2s all ease-in-out;
+  display: none;
+}
+.view-all-btn:hover {
+  background-color: #dd0000;
 }
 /*=============================> 
  style for footer section
@@ -284,6 +317,9 @@ footer h2 {
   }
   .team-images img {
     width: 100%;
+  }
+  .view-all-btn {
+    display: block;
   }
   /* media css for footer section */
   .footer-description ul {
