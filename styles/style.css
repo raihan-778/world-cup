@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  background-color: #231955;
 }
 h1 {
   font-size: 70px;
@@ -14,6 +15,10 @@ h1 {
 h3 {
   font-size: 18px;
   font-weight: 600;
+  color: #fff;
+}
+p {
+  color: #fff;
 }
 /*=============================> 
 style for banner section 
@@ -22,7 +27,7 @@ style for banner section
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #161616;
+  background-color: #100c2c;
   width: 90vw;
   margin: 60px auto;
   border-radius: 10px;
@@ -38,7 +43,7 @@ style for banner section
   width: 40vw;
 }
 .banner .banner-content button {
-  background: #dd0000;
+  background: #e8aa42;
   border-radius: 5px;
   height: 56px;
   width: 187px;
@@ -93,7 +98,7 @@ style for match info
 .link-buttons {
   width: 312px;
   height: 312px;
-  background: #161616;
+  background: #1f4690;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -112,7 +117,7 @@ style for match info
   font-weight: 600;
 }
 .btn.activ {
-  background: #dd0000;
+  background: #e8aa42;
   color: #fff;
 }
 .all-match-info {
@@ -162,13 +167,13 @@ span i {
   display: none;
 }
 .view-all-btn:hover {
-  background-color: #dd0000;
+  background-color: #e8aa42;
 }
 /*=============================> 
  style for footer section
 =======================>*/
 footer {
-  background-color: #161616;
+  background-color: #100c2c;
   color: #fff;
 }
 footer hr {
@@ -219,10 +224,12 @@ media css for all
     margin: 30px auto;
     border-radius: 10px;
     padding: 15px;
+    flex-direction: column;
   }
   .banner-content {
     padding: 20px 25px;
     width: 40vw;
+    text-align: center;
   }
   /* media css for match details section */
   .link-buttons {
@@ -240,7 +247,7 @@ media css for all
     height: 50px;
     border-radius: 10px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
     margin: 15px 0;
   }
 
@@ -325,12 +332,16 @@ media css for all
     border-radius: 10px;
     margin: 5px 15px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
   }
   .match-info img {
     width: 100%;
   }
   .view-all-btn {
     display: block;
+  }
+  /* media css for footer section */
+  .footer-description ul {
+    flex-flow: wrap;
   }
 }
